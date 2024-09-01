@@ -5,7 +5,7 @@ services:
         - "3000:3000"
       volumes:
         - type: bind
-          source: ./web
+          source: ./web/src
           target: /app
       depends_on:
         - api
@@ -18,7 +18,7 @@ services:
         - "8080:8080"
       volumes:
         - type: bind
-          source: ./api
+          source: ./api/src
           target: /app
       depends_on:
         - db
