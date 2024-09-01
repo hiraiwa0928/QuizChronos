@@ -4,7 +4,9 @@ services:
       ports:
         - "3000:3000"
       volumes:
-        - ./web:/app
+        - type: bind
+          source: ./web
+          target: /app
       depends_on:
         - api
       command:
@@ -15,7 +17,9 @@ services:
       ports:
         - "8080:8080"
       volumes:
-        - ./api:/app
+        - type: bind
+          source: ./api
+          target: /app
       depends_on:
         - db
       command:
