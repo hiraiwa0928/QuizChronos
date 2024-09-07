@@ -12,4 +12,4 @@ RUN go mod download
 EXPOSE 8080
 
 # Command to run the executable
-CMD ["go", "build", "-o", "main", ".", "&&", "./main"]
+CMD ["GOARCH=amd64" "GOOS=linux" "go", "build", "-o", "main", ".", "&&", "./main"]
