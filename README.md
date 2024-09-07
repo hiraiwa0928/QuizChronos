@@ -19,3 +19,8 @@ $ cd QuizChronos
 ```bash
 $ docker compose up -d
 ```
+
+※ コンテナとイメージを同時削除
+```bash
+$ docker-compose down --rmi all --volumes --remove-orphans
+```
