@@ -20,7 +20,7 @@ services:
       depends_on:
         - db
       command:
-        tail -f /dev/null
+        ./main
   
     db:
       image: mysql:8.0
