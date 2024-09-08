@@ -9,6 +9,8 @@ services:
           target: /app
       depends_on:
         - api
+      command:
+        npm run dev
   
     api:
       build: ./api
