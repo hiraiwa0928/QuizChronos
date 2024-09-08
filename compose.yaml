@@ -9,8 +9,6 @@ services:
           target: /app
       depends_on:
         - api
-      command:
-        tail -f /dev/null
   
     api:
       build: ./api
