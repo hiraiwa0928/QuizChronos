@@ -4,5 +4,12 @@
 		"../../compose.yaml"
 	],
 	"service": "web",
-	"workspaceFolder": "/app"
+	"workspaceFolder": "/app",
+	"customizations": {
+		"vscode": {
+		"extensions": [
+			"mhutchie.git-graph"
+		]
+    }
+  }
 }
