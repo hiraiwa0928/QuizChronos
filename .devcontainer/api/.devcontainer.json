@@ -1,0 +1,8 @@
+{
+	"name": "apiDevcontainer",
+	"dockerComposeFile"	:[
+		"../../compose.yaml"
+	],
+	"service": "api",
+	"workspaceFolder": "/app"
+}
