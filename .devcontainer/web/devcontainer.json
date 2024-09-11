@@ -1,0 +1,8 @@
+{
+	"name": "webDevcontainer",
+	"dockerComposeFile"	:[
+		"../../compose.yaml"
+	],
+	"service": "web",
+	"workspaceFolder": "/app"
+}
