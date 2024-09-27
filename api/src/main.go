@@ -12,7 +12,7 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 		// JSONレスポンスを返す
 		c.JSON(200, gin.H{
-			"message": "Hello World",
+			"message": "Hello World！",
 		})
 	})
 
