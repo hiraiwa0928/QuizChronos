@@ -4,6 +4,8 @@ services:
       volumes:
         - ./web/src:/app
           - ./web/src/node_modules:/app/node_modules
+        - ./web/src/src/routes:/app/src/routes
+        - ./web/src/src/lib:/app/src/lib
       ports:
         - 5173:5173
       depends_on:
